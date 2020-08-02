@@ -5,7 +5,9 @@
 #define SIZE 1024
 
 int main(void) {
-    float a[SIZE], b[SIZE], c[SIZE];
+    float a[SIZE] __attribute__((aligned(16)));
+    float b[SIZE] __attribute__((aligned(16)));
+    float c[SIZE] __attribute__((aligned(16)));
     
     srand((signed)time(NULL));
     for (long long i = 0ll; i < SIZE; i++) {
