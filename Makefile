@@ -1,6 +1,6 @@
 CC=gcc
-CFLAGS=
-NEON_FLAGS=-mfpu=neon
+CFLAGS=-mfloat-abi=hard
+NEON_FLAGS=-mfpu=neon -mcpu=cortex-a72
 
 neon: neon.c
 	$(CC) $< -o $@ $(CFLAGS) $(NEON_FLAGS)
