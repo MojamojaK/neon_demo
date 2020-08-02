@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=
+CFLAGS=-mfpu=neon
 
 neon: neon.c
 	$(CC) $< -o $@ $(CFLAGS)
