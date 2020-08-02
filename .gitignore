@@ -2,6 +2,7 @@
 *
 !/**/
 !*.*
+!*Makefile
 
 #ignore assembly files
 *.s
