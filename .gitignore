@@ -1,0 +1,10 @@
+#ignore files without an extension
+*
+!/**/
+!*.*
+
+#ignore assembly files
+*.s
+
+# just. why? why Apple?
+.DS_Store
